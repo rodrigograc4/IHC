@@ -1,0 +1,92 @@
+.video-card-container3{
+  position: relative;
+  width: 92%;
+  margin: auto;
+  height: 18vw;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.video-card3{
+  position: relative;
+  min-width: calc(100%/5 - 1%);
+  width: calc(100%/5 - 1%);
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #120317;
+}
+
+.video-card-price3{
+  position: relative;
+  min-height: calc(100%/5 - 1%);
+  height: calc(100%/5 - 1%);
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #120317;
+}
+
+.video-card-image3,
+.card-video3{
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.card-video3{
+  position: absolute;
+}
+
+.video-card3:hover .video-card-image3{
+  display: none;
+}
+
+
+.card__footer {
+  padding: 0 1.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  display: grid;
+  gap: 0.5ch;
+  background: #16082e;
+  height: 30%;
+  align-content: center;
+}
+
+.card__footer2 {
+  padding: 0 1.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  display: grid;
+  gap: 0.5ch;
+  background: #16082ede;
+  height: 30%;
+  align-content: center;
+}
+
+
+.card__footer span:nth-of-type(1) {
+  font-size: calc(var(--size) * 0.065);
+}
+
+.card__footer span:nth-of-type(2) {
+  font-size: calc(var(--size) * 0.035);
+}
+
+.card:is(:hover, :focus-visible) {
+  --hover: 1;
+}
+
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+  color: white;
+}
